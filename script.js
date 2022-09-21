@@ -1,19 +1,14 @@
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => {
-  alert("Hello World");
-});
-
-
 const container = document.querySelector('#container');
-let totalRows = 16;
-let totalBoxes = totalRows * totalRows;
 
+function createDivs(rows,columns) {
+  for (let i = 0; i < (rows * columns); i++) {
+    const div = document.createElement('div')
+    div.style.border = '2px solid black'
+    container.style.gridRows = `repeat(${rows}, 1fr)`;
+    container.style.gridColumns = `repeat(${columns}, 1fr)`;
+    container.appendChild(div).classList.add('box')
+  }
+}
 
-let row = 1;
-let column = 1;
-let box = document.createElement('div');
-box.style.border = '2px solid black';
-box.style.boxRow = row;
-box.style.boxColumn = column;
-
+createDivs(16,16)
 
