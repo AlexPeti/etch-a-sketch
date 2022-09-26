@@ -12,16 +12,18 @@
 
     <div class="section">
       <h1 class = "header">Etch-A-Sketch</h1>
+      <h3 id = "message"></h3>
+      <button type="button" class="grid-size-button">Grid Size</button>
       <div class = "container"></div>
     </div>
 
 
 
     <div class="button-container">
-      <button type="button" id="standard" class="standard">Draw</button>
-      <button type="button" id="rainbow" class="rainbow">Rainbow</button>
-      <button type="button" id="eraser" class="eraser">Eraser</button>
-      <button type="button" id="reset" class="reset">Reset</button>
+      <button onclick="getColorChoice('black')" type="button" class="standard">Draw</button>
+      <button onclick="getColorChoice('random')" type="button" class="rainbow">Rainbow</button>
+      <button onclick="getColorChoice('white')" type="button" class="eraser">Eraser</button>
+      <button type="button" class="reset">Reset</button>
     </div>
    
 
