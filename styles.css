@@ -1,4 +1,71 @@
-#container {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 600px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    margin-top: 30px;
+}
+
+
+ .section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container {
     height: 400px;
     width: 400px;
     display: grid;
@@ -6,16 +73,11 @@
     
 }
 
-
-
-
-
 .gridbox {
     height: 32px;
     width: 32px;
+    
 }
-
-
 
 body {
     background-color: rgb(175, 95, 95);
@@ -86,8 +148,7 @@ h1 {
    background: linear-gradient(to right,rgb(207, 41, 166),rgb(45, 206, 72));
    color: rgb(23, 34, 190);
    transition: 2s;
-   
-   
-   
-    
 }
+
+
+*/
