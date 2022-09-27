@@ -24,6 +24,7 @@ function createGrid(size) {
   let gridSize = size * size;
   for(let i = 0; i < gridSize; i++){
     let div = document.createElement('div');
+    div.classList.add('gridcell')
     div.addEventListener('mouseover', drawGrid);
     
     container.insertAdjacentElement('beforeend', div)
@@ -54,8 +55,8 @@ function drawGrid() {
   if (color == 'black') {
     this.style.backgroundColor = 'black'
   }
-  else {
-    this.style.backgroundColor = 'red'
+  else { 
+    this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`
   }
 
 }
