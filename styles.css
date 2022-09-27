@@ -41,7 +41,9 @@ body {
     text-align:center;
     transition: all 0.8s;
     border-radius: 4px;
+    
  }
+ 
  .rainbow:hover{
     color:rgb(211, 45, 197);
     background-color: greenyellow;
@@ -83,7 +85,10 @@ body {
 
 }
 
-
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
 
 
 

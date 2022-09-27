@@ -1,4 +1,5 @@
 let color = 'black';
+let click = false;
 
   createGrid(16);
   resetGrid();
@@ -49,13 +50,14 @@ function getGridSize() {
 //////////////// function that lets you draw on the grid////////////////////
 
 function drawGrid() {
+  if(click){
   if (color == 'black') {
     this.style.backgroundColor = 'black'
   }
   else { 
     this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`
   }
-  
+}
 
 }
 
@@ -69,8 +71,14 @@ function resetGrid() {
   gridCells.forEach((div) => div.style.backgroundColor = 'white')
 }
 
+////////////////function that makes you have to click in order to draw, so that you have better control////
 
 
+document.querySelector('body').addEventListener('click',function(e){
+  if(e.target.tagName != 'BUTTON'){
+    click = !click;
+  }
+})
 
 
 
