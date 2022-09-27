@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color:white;
 }
 
 .button-container {
@@ -31,9 +31,57 @@ body {
     flex-direction: column;
  }   
 
+ .rainbow {
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: rgb(64, 77, 194);
+    text-align:center;
+    transition: all 0.8s;
+    border-radius: 4px;
+ }
+ .rainbow:hover{
+    color:rgb(211, 45, 197);
+    background-color: greenyellow;
+ }
 
+.standard {
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: rgb(17, 17, 17);
+    text-align:center;
+    border-radius: 4px;
 
+}
 
+.reset {
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: rgb(17, 17, 17);
+    text-align:center;
+    border-radius: 4px;
+
+}
+
+.grid-size-button {
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: rgb(17, 17, 17);
+    text-align:center;
+    border-radius: 4px;
+
+}
 
 
 
